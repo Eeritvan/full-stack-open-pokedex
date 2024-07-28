@@ -8,10 +8,13 @@ on:
     branches: [main]
     types: [opened, synchronize]
 
-steps:
-  - name: Check the deployed service URL
-    uses: Jtalk/url-health-check-action@v4
-    with:
-      url: https://full-stack-open-pokedex-2024.fly.dev/
-      max-attempts: 3
-      retry-delay: 5s
+Jobs:
+  Health-Check:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check the deployed service URL
+        uses: Jtalk/url-health-check-action@v4
+        with:
+          url: https://full-stack-open-pokedex-2024.fly.dev/
+          max-attempts: 3
+          retry-delay: 5s
