@@ -13,3 +13,6 @@ Start by running `npm install` inside the project folder
 `npm run eslint` to run eslint
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
+
+## exercises 11.20 and 11.21
+Can be found in this [repo](https://github.com/Eeritvan/Fullstack-Open-phonebook-CICD)
